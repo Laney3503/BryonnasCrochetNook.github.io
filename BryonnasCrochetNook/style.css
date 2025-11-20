@@ -1,0 +1,247 @@
+:root {
+  --brand-blue: #57B1DE;
+  --brand-orange: #F0B260;
+  --brand-dark: #1F386E;
+  --muted-text: #5a5a5a;
+  --bg-soft: #f7fbff;
+  --accent:#1d3557;
+  --muted:#6b7280;
+  --text:#222;
+  --max-width:62ch;
+}
+
+/* FONTS
+--------------------------*/
+.pangolin-regular {
+  font-family: "Pangolin", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jua-regular {
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* END OF FONTS
+--------------------------*/
+
+
+/* NAVBAR STUFF 
+--------------------------*/
+.nav{
+    border-style: groove ;
+    border-color:#1F386E;
+    border-width: 5px;
+    padding: 3px;
+    border-radius: 8px;
+    background-color: #57B1DE;
+    height: 60px;
+}
+
+.nav .nav-link{
+    color: var(--bg-soft);
+    font-weight: 600;
+}
+.nav .nav-link.active{
+    background: var(--brand-dark);
+    color: var(--bg-soft);
+    text-shadow: var(--brand-blue) 1px 1px 2px;
+ 
+}
+/* END OF NAVBAR STUFF 
+------------------------*/
+
+/* Container 
+------------------------*/
+.container-fluid{
+
+/*  background-image: linear-gradient(to right, #1F386E, #F0B260);*/
+  font-family: "Jua", sans-serif;
+  color: var(--brand-dark);
+  background: #c6ebfe;
+ 
+
+}
+/* End Of Container 
+------------------------*/
+
+
+/* Custom Carousel 
+------------------------*/
+.custom-carousel{
+  height: 600px;
+  max-width: auto;
+  margin: 1.5rem auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(31,56,110,0.18);
+  position: relative;
+}
+
+/* force a consistent height (adjust as needed) */
+.custom-carousel .carousel-inner{
+  height: 600px;
+}
+
+/* make images cover the carousel area */
+.custom-carousel .carousel-item img{
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  display: block;
+  text-align: center;
+}
+
+/* caption styling */
+.custom-carousel .carousel-caption{
+  display: block !important;
+  z-index: 60;
+  bottom: 1.25rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 90%;
+  background: rgba(31,56,110,0.55);
+  color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+
+}
+
+/* indicators */
+.custom-carousel .carousel-indicators [data-bs-target]{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.65);
+  border: none;
+}
+.custom-carousel .carousel-indicators .active{
+  background-color: var(--brand-orange);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* controls */
+.custom-carousel .carousel-control-prev,
+.custom-carousel .carousel-control-next{
+  width: 4.5rem;
+  opacity: 0.75;
+  
+}
+.custom-carousel .carousel-control-prev-icon,
+.custom-carousel .carousel-control-next-icon{
+  background-color: var(--brand-dark);
+  border-radius: 50%;
+  padding: 8px;
+  background-size: 18px 18px;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.35));
+}
+ @media only screen and (max-width: 600px) {
+      .featurette-image {
+        width: 300px;
+        height: 300px;
+      }
+  
+}
+/* END OF Custom Carousel 
+------------------------*/
+
+form {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      max-width: 70%;
+      margin: auto;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    button {
+      background: #F0B260;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1F386E;
+    }
+/* ################ ABOUT ME PAGE########################### */
+.aboutmepage{
+ 
+  color: var(--brand-dark);
+  
+}
+
+
+
+.lead { 
+ 
+  font-size: 20px;
+   font-weight:500; 
+   color:#263238; 
+}
+
+ @media only screen and (max-width: 768px) {
+      .lead {
+        font-size: 16px;
+      }
+    }
+
+    @media only screen and (min-width: 1200px) {
+      .lead {
+        font-size: 30px; 
+      }
+    }
+
+/* nicer headings */
+h2 { font-family: "Balsamiq Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color:var(--accent); letter-spacing:0.6px; margin-bottom:1rem; }
+h3 { color:var(--accent); margin-top:1.5rem; }
+
+
+
+
+
+
+
+/* ################ END OF ABOUT ME PAGE########################### */
+
+
+/*shop page*/
+ body {
+      background-color: #faf7f5;
+      font-family: Arial, sans-serif;
+    }
+
+    .product-card {
+      border: none;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      background: #fff;
+      transition: transform 0.2s;
+    }
+
+    .product-card:hover {
+      transform: scale(1.02);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #57B1DE;
+      font-size: 1.1rem;
+    }
+  
