@@ -24,9 +24,16 @@ staticfiles/
 .DS_Store
 .idea/
 *.code-workspace
+.vscode/
 
 # Duplicate images (Django uses static/img/ only)
 /img/
+
+# ignore env and common build dirs
+node_modules/
+dist/
+__pycache__/
+*.pyc
 
 # Optional: keep .env.example so others know what to configure
 # .env.example is NOT ignored
