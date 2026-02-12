@@ -25,5 +25,8 @@ staticfiles/
 .idea/
 *.code-workspace
 
+# Duplicate images (Django uses static/img/ only)
+/img/
+
 # Optional: keep .env.example so others know what to configure
 # .env.example is NOT ignored
