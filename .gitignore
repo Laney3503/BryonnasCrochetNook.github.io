@@ -1,0 +1,29 @@
+# Environment and secrets
+.env
+.env.local
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+
+# Django
+*.log
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+# IDE / OS
+.DS_Store
+.idea/
+*.code-workspace
+
+# Optional: keep .env.example so others know what to configure
+# .env.example is NOT ignored
